@@ -10,7 +10,7 @@ public class Exercise518A {
       
       while (numberLines > 0) {
          int b = 1;
-         while (b <= rowLength - numberLines && b <= 6) {
+         while (b <= rowLength - numberLines && b <= n) {
             System.out.print(b + " ");
             b++;
          } 

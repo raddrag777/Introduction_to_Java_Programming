@@ -17,6 +17,7 @@ public class Exercise603Method {
          sum += digit;
          number /= 10;
       }
+      return sum;
    }
    
    public static boolean isPalindrome(int number) {

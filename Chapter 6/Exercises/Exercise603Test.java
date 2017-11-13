@@ -8,7 +8,11 @@ public class Exercise603Test {
       Scanner input = new Scanner(System.in);
       System.out.print("Enter integer: ");
       int number = input.nextInt();
+      int userNumber = number;
       
-      System.out.print(sum);
+      //System.out.print(Exercise603Method.isPalindrome(number));
+      System.out.println(
+         number + (Exercise603Method.isPalindrome(number) ? " is " : " is not ")
+			+ "a palindrome.");
    }
 }

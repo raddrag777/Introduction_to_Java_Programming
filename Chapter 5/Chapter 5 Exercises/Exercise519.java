@@ -2,9 +2,9 @@
 
 public class Exercise519 {
    public static void main(String [] args) {
-      int numberLines = 8;
-      int rowLength = 8;
-      int numberDown = 8;
+      int numberLines = n;
+      int rowLength = n;
+      int numberDown = n;
       while (numberLines > 0) {
          int aSpaces = 1;
          //System.out.print(rowLength - numberLines);
@@ -32,15 +32,15 @@ public class Exercise519 {
       }
    }
 }  
-/*int rowLength = 7;
-      int numberLines = 6;
-      System.out.printf("Pattern A\n");
+/*int spaces = n-1;
       
-      while (numberLines > 0) {
-         int b = 1;
-         while (b <= rowLength - numberLines && b <= 6) {
-            System.out.print(b + " ");
-            b++;
-         } 
-         numberLines--;
-         System.out.pr*/
+      for (int i = 1; i <= n; i++){//loops for number of lines
+         for (int j = 0; j < spaces; j++) {//loops for spaces
+            System.out.print("    ");
+         }
+         for (int k = i; k > 0; k--) {//loops for count down
+            System.out.print(k + "   ");
+         }
+         System.out.println();//new line
+         spaces--;//decrements the number of spaces loops
+      }*/
